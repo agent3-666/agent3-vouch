@@ -209,7 +209,9 @@ if (still) {{
     for name, seconds, description in BEATS:
         rows.append(f"| {at//60}:{at%60:02d} | {seconds}s | {description} |")
         at += seconds
-    storyboard = ROOT / "media" / "storyboard.md"
+    # The timings only. media/storyboard.md is written by hand and says what is on screen in each
+    # shot, which is what the narration is written against, so this must not overwrite it.
+    storyboard = ROOT / "media" / "storyboard-timings.md"
     storyboard.parent.mkdir(parents=True, exist_ok=True)
     storyboard.write_text(
         "# Storyboard\n\n"

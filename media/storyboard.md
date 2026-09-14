@@ -1,7 +1,8 @@
 # Storyboard, vouch-demo.mp4
 
-Silent, 1280x720, 30fps, h264, 102 seconds. Rendered frame by frame from `site/demo.html`; no screen
-was recorded. Every number on screen comes from a real run against the on-chain snapshot.
+Silent, 1280x720, 30fps, h264, 3062 frames, 102.066667 seconds. Rendered frame by frame from
+`site/demo.html`; no screen was recorded. Every number on screen comes from a real run against the
+on-chain snapshot.
 
 | from | to | on screen | what the picture already says |
 |---|---|---|---|
@@ -12,7 +13,7 @@ was recorded. Every number on screen comes from a real run against the on-chain 
 | 0:54 | 1:08 | Heading **"The one that holds up"**, subtitle "Fewer pieces of praise, every one attached to a job somebody paid for". PaperTrail card: claimed 4, verified 4, all six lines PASS, including "4 independent operators have paid this agent for completed work, 3 required" and "the largest single payer accounts for 25% of verified volume". | Four beats twelve, and why. |
 | 1:08 | 1:16 | Full screen: **"Hired PaperTrail"** in large type, under it "for 65, not the cheapest, and not the best reviewed". | The decision, and that it went against both surface signals. |
 | 1:16 | 1:28 | Heading **"It did the job"**, subtitle "school-events.ics, ready to open in the calendar". Three events listed: Year 4 parents evening, Non-uniform day for the harvest appeal, Class 4B assembly families welcome. | The errand finished, with a file that exists. |
-| 1:28 | 1:42 | Heading **"All of it is on a public chain"**, subtitle "Open any transaction and recompute the check yourself". A table of Ethereum Sepolia transaction hashes: two payments to PaperTrail, one payment to DateHound, and one row labelled "the same money going back". Footer line: we seeded this evidence ourselves, registered the agents, sent the payments and wrote the praise, none of it is wild data. | That the evidence is public and checkable, and that we put it there. |
+| 1:28 | 1:42 | Heading **"All of it is on a public chain"**, subtitle "Open any transaction and recompute the check yourself". A table of four Ethereum Sepolia transactions, each shown as a 0x-prefixed hash: two payments to PaperTrail, one payment to DateHound, and one row labelled "the same money going back". Footer line: we seeded this evidence ourselves, registered the agents, sent the payments and wrote the praise, none of it is wild data. | That the evidence is public and checkable, and that we put it there. |
 
 Notes for narration: the picture already carries the numbers and the rule names, so the voice has
 room for the part the screen does not say, which is why any of it matters: that an agent is about to

@@ -172,15 +172,30 @@ a {{ color:#d4e85a; }}
 </div>
 <script>
 const beats = {beats_js};
-let i = 0;
-function show() {{
+const params = new URLSearchParams(location.search);
+const still = params.get('beat');
+
+if (still) {{
+  // One frame, no timers: this is how the video frames are rendered.
   document.querySelectorAll('section').forEach(s => s.classList.remove('on'));
-  const [id, secs] = beats[i];
-  document.getElementById(id).classList.add('on');
-  i = (i + 1) % beats.length;
-  if (i !== 0) setTimeout(show, secs * 1000);
+  const target = document.getElementById(still);
+  if (target) target.classList.add('on');
+  const scroll = parseInt(params.get('scroll') || '0', 10);
+  const term = document.querySelector('#terminal .scroll');
+  if (term) {{
+    term.style.animation = 'none';
+    term.style.transform = 'translateY(-' + scroll + 'px)';
+  }}
+}} else {{
+  let i = 0;
+  (function show() {{
+    document.querySelectorAll('section').forEach(s => s.classList.remove('on'));
+    const [id, secs] = beats[i];
+    document.getElementById(id).classList.add('on');
+    i = (i + 1) % beats.length;
+    if (i !== 0) setTimeout(show, secs * 1000);
+  }})();
 }}
-show();
 </script>
 </body></html>
 """

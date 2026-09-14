@@ -31,6 +31,17 @@ NEW_FEEDBACK = "0x" + Web3.keccak(
 ).hex().lstrip("0x")
 
 
+
+def hx(value) -> str:
+    """Hash as a 0x-prefixed string.
+
+    web3 v8 returns bare hex from HexBytes.hex(), and a hash without the prefix makes every explorer
+    link in the snapshot dead.
+    """
+    text = value.hex() if hasattr(value, "hex") else str(value)
+    return text if text.startswith("0x") else "0x" + text
+
+
 def topic_address(address: str) -> str:
     return "0x" + "0" * 24 + Web3.to_checksum_address(address)[2:].lower()
 
@@ -90,12 +101,12 @@ def main() -> int:
                 continue
             settlements.append(
                 {
-                    "ref": tx["hash"].hex(),
+                    "ref": hx(tx["hash"]),
                     "payer_agent": agent_of[payer_role],
                     "payee_agent": agent_of[payee_role],
                     "amount": float(w3.from_wei(tx["value"], "ether")) * 1_000_000,
                     "token": "SepoliaETH",
-                    "tx": tx["hash"].hex(),
+                    "tx": hx(tx["hash"]),
                     "completed": True,
                 }
             )
@@ -129,7 +140,9 @@ def main() -> int:
             author = Web3.to_checksum_address(args_["clientAddress"])
             if author not in by_address:
                 continue  # praise from outside our seeded cast is not part of this demo
-            payment_tx = args_["feedbackURI"]
+            # The praise stores the payment hash as written at the time, which may lack the prefix.
+            # Both sides have to be normalised or the praise will not match its payment.
+            payment_tx = hx(args_["feedbackURI"]) if args_["feedbackURI"] else ""
             feedback.append(
                 {
                     "agent_id": agent_id,
@@ -137,7 +150,7 @@ def main() -> int:
                     "value": int(args_["value"]),
                     "tag": args_["tag2"],
                     "ref": payment_tx,
-                    "tx": log["transactionHash"].hex(),
+                    "tx": hx(log["transactionHash"]),
                 }
             )
     quotes = manifest.get("quotes", {})

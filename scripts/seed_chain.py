@@ -118,7 +118,7 @@ class Chain:
         receipt = self.w3.eth.wait_for_transaction_receipt(h, timeout=240)
         if receipt.status != 1:
             raise RuntimeError(f"transaction failed: {h.hex()}")
-        return h.hex()
+        return h.hex() if str(h.hex()).startswith("0x") else "0x" + h.hex()
 
     def transfer(self, sender: Account, to: str, value: int) -> str:
         return self.send(sender, {"to": Web3.to_checksum_address(to), "value": value, "gas": 21000})

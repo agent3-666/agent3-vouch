@@ -118,111 +118,111 @@
   ],
   "settlements": [
     {
-      "ref": "11fd28310938a7daa2d15dce2b11feaa633c4f8e43f5b27404f35c6a769685a4",
+      "ref": "0x11fd28310938a7daa2d15dce2b11feaa633c4f8e43f5b27404f35c6a769685a4",
       "payer_agent": 10289,
       "payee_agent": 10283,
       "amount": 200.0,
       "token": "SepoliaETH",
-      "tx": "11fd28310938a7daa2d15dce2b11feaa633c4f8e43f5b27404f35c6a769685a4",
+      "tx": "0x11fd28310938a7daa2d15dce2b11feaa633c4f8e43f5b27404f35c6a769685a4",
       "completed": true
     },
     {
-      "ref": "0c3920a0569546107885519940153968d6359319f954c71a1faa92e6517996d0",
+      "ref": "0x0c3920a0569546107885519940153968d6359319f954c71a1faa92e6517996d0",
       "payer_agent": 10290,
       "payee_agent": 10283,
       "amount": 200.0,
       "token": "SepoliaETH",
-      "tx": "0c3920a0569546107885519940153968d6359319f954c71a1faa92e6517996d0",
+      "tx": "0x0c3920a0569546107885519940153968d6359319f954c71a1faa92e6517996d0",
       "completed": true
     },
     {
-      "ref": "916e209393c02adf206a37e5bb274e07a016c4990274c4955f156cd1593abc7b",
+      "ref": "0x916e209393c02adf206a37e5bb274e07a016c4990274c4955f156cd1593abc7b",
       "payer_agent": 10291,
       "payee_agent": 10283,
       "amount": 200.0,
       "token": "SepoliaETH",
-      "tx": "916e209393c02adf206a37e5bb274e07a016c4990274c4955f156cd1593abc7b",
+      "tx": "0x916e209393c02adf206a37e5bb274e07a016c4990274c4955f156cd1593abc7b",
       "completed": true
     },
     {
-      "ref": "1053c6daa8d25e991c3c0bc27f03a654c9c9f7c06a222ce44ec7dd9a93b6e4da",
+      "ref": "0x1053c6daa8d25e991c3c0bc27f03a654c9c9f7c06a222ce44ec7dd9a93b6e4da",
       "payer_agent": 10292,
       "payee_agent": 10283,
       "amount": 200.0,
       "token": "SepoliaETH",
-      "tx": "1053c6daa8d25e991c3c0bc27f03a654c9c9f7c06a222ce44ec7dd9a93b6e4da",
+      "tx": "0x1053c6daa8d25e991c3c0bc27f03a654c9c9f7c06a222ce44ec7dd9a93b6e4da",
       "completed": true
     },
     {
-      "ref": "778d654856761e89e1d7d8a3a313d76cb4120f11c5012bbda6f04d0df675183c",
+      "ref": "0x778d654856761e89e1d7d8a3a313d76cb4120f11c5012bbda6f04d0df675183c",
       "payer_agent": 10293,
       "payee_agent": 10284,
       "amount": 1000.0,
       "token": "SepoliaETH",
-      "tx": "778d654856761e89e1d7d8a3a313d76cb4120f11c5012bbda6f04d0df675183c",
+      "tx": "0x778d654856761e89e1d7d8a3a313d76cb4120f11c5012bbda6f04d0df675183c",
       "completed": true
     },
     {
-      "ref": "d2786244c1585764b644aea9e2aee4167172d9ba4664ab636662411421d447e1",
+      "ref": "0xd2786244c1585764b644aea9e2aee4167172d9ba4664ab636662411421d447e1",
       "payer_agent": 10294,
       "payee_agent": 10284,
       "amount": 200.0,
       "token": "SepoliaETH",
-      "tx": "d2786244c1585764b644aea9e2aee4167172d9ba4664ab636662411421d447e1",
+      "tx": "0xd2786244c1585764b644aea9e2aee4167172d9ba4664ab636662411421d447e1",
       "completed": true
     },
     {
-      "ref": "0876f2f07074a710f221afda9a3b2012a3f28ba20b1c1c8ff98a5a7cd54199b4",
+      "ref": "0x0876f2f07074a710f221afda9a3b2012a3f28ba20b1c1c8ff98a5a7cd54199b4",
       "payer_agent": 10286,
       "payee_agent": 10282,
       "amount": 200.0,
       "token": "SepoliaETH",
-      "tx": "0876f2f07074a710f221afda9a3b2012a3f28ba20b1c1c8ff98a5a7cd54199b4",
+      "tx": "0x0876f2f07074a710f221afda9a3b2012a3f28ba20b1c1c8ff98a5a7cd54199b4",
       "completed": true
     },
     {
-      "ref": "5677fb86a0823db2848ae9d51ea381d8c6100c1674261c4f04f25f8cc2e60b37",
+      "ref": "0x5677fb86a0823db2848ae9d51ea381d8c6100c1674261c4f04f25f8cc2e60b37",
       "payer_agent": 10282,
       "payee_agent": 10286,
       "amount": 200.0,
       "token": "SepoliaETH",
-      "tx": "5677fb86a0823db2848ae9d51ea381d8c6100c1674261c4f04f25f8cc2e60b37",
+      "tx": "0x5677fb86a0823db2848ae9d51ea381d8c6100c1674261c4f04f25f8cc2e60b37",
       "completed": true
     },
     {
-      "ref": "09c2c8bd18018cc86b0b3c1d4a0eb8850957ec3ca8059e879da2acf71b27ab0e",
+      "ref": "0x09c2c8bd18018cc86b0b3c1d4a0eb8850957ec3ca8059e879da2acf71b27ab0e",
       "payer_agent": 10287,
       "payee_agent": 10282,
       "amount": 200.0,
       "token": "SepoliaETH",
-      "tx": "09c2c8bd18018cc86b0b3c1d4a0eb8850957ec3ca8059e879da2acf71b27ab0e",
+      "tx": "0x09c2c8bd18018cc86b0b3c1d4a0eb8850957ec3ca8059e879da2acf71b27ab0e",
       "completed": true
     },
     {
-      "ref": "b8fd6484fa00e3aa720029dd8852421341a87afed4ab849feaf2157143ba37cb",
+      "ref": "0xb8fd6484fa00e3aa720029dd8852421341a87afed4ab849feaf2157143ba37cb",
       "payer_agent": 10282,
       "payee_agent": 10287,
       "amount": 200.0,
       "token": "SepoliaETH",
-      "tx": "b8fd6484fa00e3aa720029dd8852421341a87afed4ab849feaf2157143ba37cb",
+      "tx": "0xb8fd6484fa00e3aa720029dd8852421341a87afed4ab849feaf2157143ba37cb",
       "completed": true
     },
     {
-      "ref": "9ddf227f5a5ac9c69598dcf4c7349a4ee9685b7e97f9c9ce505e8eaab49efe31",
+      "ref": "0x9ddf227f5a5ac9c69598dcf4c7349a4ee9685b7e97f9c9ce505e8eaab49efe31",
       "payer_agent": 10288,
       "payee_agent": 10282,
       "amount": 200.0,
       "token": "SepoliaETH",
-      "tx": "9ddf227f5a5ac9c69598dcf4c7349a4ee9685b7e97f9c9ce505e8eaab49efe31",
+      "tx": "0x9ddf227f5a5ac9c69598dcf4c7349a4ee9685b7e97f9c9ce505e8eaab49efe31",
       "completed": true
     },
     {
-      "ref": "212c276080994218f1da10d108e1f00a261a250fbeefd9879d6e53fa5874ae6b",
+      "ref": "0x212c276080994218f1da10d108e1f00a261a250fbeefd9879d6e53fa5874ae6b",
       "payer_agent": 10282,
       "payee_agent": 10288,
       "amount": 200.0,
       "token": "SepoliaETH",
-      "tx": "212c276080994218f1da10d108e1f00a261a250fbeefd9879d6e53fa5874ae6b",
+      "tx": "0x212c276080994218f1da10d108e1f00a261a250fbeefd9879d6e53fa5874ae6b",
       "completed": true
     }
   ],
@@ -232,24 +232,24 @@
       "author": "0x92a6830Ca5F2307dAf595C94e506eC835A917fEC",
       "value": 100,
       "tag": "settled",
-      "ref": "0876f2f07074a710f221afda9a3b2012a3f28ba20b1c1c8ff98a5a7cd54199b4",
-      "tx": "a70a10ffb8602c955986198e2f85286e44ca204b044cac19ecaa682e34dbe7f2"
+      "ref": "0x0876f2f07074a710f221afda9a3b2012a3f28ba20b1c1c8ff98a5a7cd54199b4",
+      "tx": "0xa70a10ffb8602c955986198e2f85286e44ca204b044cac19ecaa682e34dbe7f2"
     },
     {
       "agent_id": 10282,
       "author": "0x6EA8dB3bc0a1178d223D334c7f4b69d40f967141",
       "value": 100,
       "tag": "settled",
-      "ref": "09c2c8bd18018cc86b0b3c1d4a0eb8850957ec3ca8059e879da2acf71b27ab0e",
-      "tx": "8826272719f301bf653c4219cfde9372d838cf9e96902e4a658397fb9c751f69"
+      "ref": "0x09c2c8bd18018cc86b0b3c1d4a0eb8850957ec3ca8059e879da2acf71b27ab0e",
+      "tx": "0x8826272719f301bf653c4219cfde9372d838cf9e96902e4a658397fb9c751f69"
     },
     {
       "agent_id": 10282,
       "author": "0xf5F51805b430ED8D67fd5DB2704bFa01E05C91E3",
       "value": 100,
       "tag": "settled",
-      "ref": "9ddf227f5a5ac9c69598dcf4c7349a4ee9685b7e97f9c9ce505e8eaab49efe31",
-      "tx": "2c33d3e4400d99fba44b5135a2fa15e6db4c0290842162fa04e426ac6f7e4a88"
+      "ref": "0x9ddf227f5a5ac9c69598dcf4c7349a4ee9685b7e97f9c9ce505e8eaab49efe31",
+      "tx": "0x2c33d3e4400d99fba44b5135a2fa15e6db4c0290842162fa04e426ac6f7e4a88"
     },
     {
       "agent_id": 10282,
@@ -257,7 +257,7 @@
       "value": 100,
       "tag": "praise",
       "ref": "",
-      "tx": "fe082d78d1feedd9242e823ade946f1029bc811686da4d6ca53f0053d50bed63"
+      "tx": "0xfe082d78d1feedd9242e823ade946f1029bc811686da4d6ca53f0053d50bed63"
     },
     {
       "agent_id": 10282,
@@ -265,7 +265,7 @@
       "value": 100,
       "tag": "praise",
       "ref": "",
-      "tx": "1f21e19e65442bb0a3c0b6763af31aa176a00fac1001ddeadbe6e8a9d79dad07"
+      "tx": "0x1f21e19e65442bb0a3c0b6763af31aa176a00fac1001ddeadbe6e8a9d79dad07"
     },
     {
       "agent_id": 10282,
@@ -273,7 +273,7 @@
       "value": 100,
       "tag": "praise",
       "ref": "",
-      "tx": "641e07df9f193fca3e358e61846bb0a30a5d6609552a455f2ecc393c6d0b5f34"
+      "tx": "0x641e07df9f193fca3e358e61846bb0a30a5d6609552a455f2ecc393c6d0b5f34"
     },
     {
       "agent_id": 10282,
@@ -281,7 +281,7 @@
       "value": 100,
       "tag": "praise",
       "ref": "",
-      "tx": "ad47a753aacfc06166b242d257b2abdff3271d276e7a3af7c6d67ffbbe421690"
+      "tx": "0xad47a753aacfc06166b242d257b2abdff3271d276e7a3af7c6d67ffbbe421690"
     },
     {
       "agent_id": 10282,
@@ -289,7 +289,7 @@
       "value": 100,
       "tag": "praise",
       "ref": "",
-      "tx": "1ec1fb6f97e3db439d5003eeb6d24c945641aaea28ff344bf4374911732cb27c"
+      "tx": "0x1ec1fb6f97e3db439d5003eeb6d24c945641aaea28ff344bf4374911732cb27c"
     },
     {
       "agent_id": 10282,
@@ -297,7 +297,7 @@
       "value": 100,
       "tag": "praise",
       "ref": "",
-      "tx": "ee0fa9b7fcda821b3c907d501de2c68ad0dd93ce2b180d8f7bd247d52da6ef40"
+      "tx": "0xee0fa9b7fcda821b3c907d501de2c68ad0dd93ce2b180d8f7bd247d52da6ef40"
     },
     {
       "agent_id": 10282,
@@ -305,7 +305,7 @@
       "value": 100,
       "tag": "praise",
       "ref": "",
-      "tx": "88232855a6e94b35b4cc87d298abdb0dc32e871c2e632d12aa3503f5fb6b2053"
+      "tx": "0x88232855a6e94b35b4cc87d298abdb0dc32e871c2e632d12aa3503f5fb6b2053"
     },
     {
       "agent_id": 10282,
@@ -313,7 +313,7 @@
       "value": 100,
       "tag": "praise",
       "ref": "",
-      "tx": "fcf17b0bd651d6df10707bf61c8fe0738581c7b99aaaffa54849d17f56f02cad"
+      "tx": "0xfcf17b0bd651d6df10707bf61c8fe0738581c7b99aaaffa54849d17f56f02cad"
     },
     {
       "agent_id": 10282,
@@ -321,55 +321,55 @@
       "value": 100,
       "tag": "praise",
       "ref": "",
-      "tx": "c185ca361df45d44a6dc5b635668158ad6fbf8bfb105ad96a106583026ed14ae"
+      "tx": "0xc185ca361df45d44a6dc5b635668158ad6fbf8bfb105ad96a106583026ed14ae"
     },
     {
       "agent_id": 10283,
       "author": "0x037996A6219191A22713F17A38E91B8653A24b78",
       "value": 100,
       "tag": "settled",
-      "ref": "11fd28310938a7daa2d15dce2b11feaa633c4f8e43f5b27404f35c6a769685a4",
-      "tx": "8c175fc38a77221c142819dcd56aa59346181ce97ca8b4f68fa43e1ab3a99eb0"
+      "ref": "0x11fd28310938a7daa2d15dce2b11feaa633c4f8e43f5b27404f35c6a769685a4",
+      "tx": "0x8c175fc38a77221c142819dcd56aa59346181ce97ca8b4f68fa43e1ab3a99eb0"
     },
     {
       "agent_id": 10283,
       "author": "0x5fc1d7E58aCf239B47e93a833D0d516FBBe014ad",
       "value": 100,
       "tag": "settled",
-      "ref": "0c3920a0569546107885519940153968d6359319f954c71a1faa92e6517996d0",
-      "tx": "0cc8dc8cb5bd42cf96c2871e8d50003a8af6cb686c35e1d09ab4a5a57a5443ec"
+      "ref": "0x0c3920a0569546107885519940153968d6359319f954c71a1faa92e6517996d0",
+      "tx": "0x0cc8dc8cb5bd42cf96c2871e8d50003a8af6cb686c35e1d09ab4a5a57a5443ec"
     },
     {
       "agent_id": 10283,
       "author": "0x6aD990b2E731D05f9db03f50D93e0579d138aec1",
       "value": 100,
       "tag": "settled",
-      "ref": "916e209393c02adf206a37e5bb274e07a016c4990274c4955f156cd1593abc7b",
-      "tx": "590e6041afe79377b88b9e3053061e7dd7ccac3894936a5152a33b2f0ad8f6a4"
+      "ref": "0x916e209393c02adf206a37e5bb274e07a016c4990274c4955f156cd1593abc7b",
+      "tx": "0x590e6041afe79377b88b9e3053061e7dd7ccac3894936a5152a33b2f0ad8f6a4"
     },
     {
       "agent_id": 10283,
       "author": "0xF2dcE12ef86D2FB5F024066FD9b2319Ae463F3F9",
       "value": 100,
       "tag": "settled",
-      "ref": "1053c6daa8d25e991c3c0bc27f03a654c9c9f7c06a222ce44ec7dd9a93b6e4da",
-      "tx": "6a31f3a792cd6348e95b8762d4ffa9588df932ca2c3950476bfab9282c541e8f"
+      "ref": "0x1053c6daa8d25e991c3c0bc27f03a654c9c9f7c06a222ce44ec7dd9a93b6e4da",
+      "tx": "0x6a31f3a792cd6348e95b8762d4ffa9588df932ca2c3950476bfab9282c541e8f"
     },
     {
       "agent_id": 10284,
       "author": "0x68CFa62B759ab69D7f895D2B0FCB73717e5D727D",
       "value": 100,
       "tag": "settled",
-      "ref": "778d654856761e89e1d7d8a3a313d76cb4120f11c5012bbda6f04d0df675183c",
-      "tx": "070063fdbd3f2ce0645cf7e64a3c4b714d48dd3920f053a2d25ac493e580052b"
+      "ref": "0x778d654856761e89e1d7d8a3a313d76cb4120f11c5012bbda6f04d0df675183c",
+      "tx": "0x070063fdbd3f2ce0645cf7e64a3c4b714d48dd3920f053a2d25ac493e580052b"
     },
     {
       "agent_id": 10284,
       "author": "0x06bCd1943c8019978d73a06a5558DD7d84B5EA2b",
       "value": 100,
       "tag": "settled",
-      "ref": "d2786244c1585764b644aea9e2aee4167172d9ba4664ab636662411421d447e1",
-      "tx": "35a31c80b724446863b7be2143cc07891f51e5183d425839431541e84150a2ca"
+      "ref": "0xd2786244c1585764b644aea9e2aee4167172d9ba4664ab636662411421d447e1",
+      "tx": "0x35a31c80b724446863b7be2143cc07891f51e5183d425839431541e84150a2ca"
     },
     {
       "agent_id": 10285,
@@ -377,7 +377,7 @@
       "value": 100,
       "tag": "praise",
       "ref": "",
-      "tx": "9cfac729c0738b63b5a0fac3de3a619650cb8f329712011ea4880dcfcd8a3e22"
+      "tx": "0x9cfac729c0738b63b5a0fac3de3a619650cb8f329712011ea4880dcfcd8a3e22"
     },
     {
       "agent_id": 10285,
@@ -385,7 +385,7 @@
       "value": 100,
       "tag": "praise",
       "ref": "",
-      "tx": "f3f650cbe1aed3184c042d4d8389d6b44450b3d56022b3344f6a707d8c75cbf4"
+      "tx": "0xf3f650cbe1aed3184c042d4d8389d6b44450b3d56022b3344f6a707d8c75cbf4"
     },
     {
       "agent_id": 10285,
@@ -393,7 +393,7 @@
       "value": 100,
       "tag": "praise",
       "ref": "",
-      "tx": "fc69f06915063b0c7af59674f272fee7caf21889807e5f44b1e24d42d64fa3b3"
+      "tx": "0xfc69f06915063b0c7af59674f272fee7caf21889807e5f44b1e24d42d64fa3b3"
     }
   ]
 }

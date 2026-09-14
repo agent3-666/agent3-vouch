@@ -157,7 +157,7 @@ no model and no account, and a model is never asked what the verdict should be. 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data", default=str(ROOT / "data" / "candidates.json"))
+    parser.add_argument("--data", default=str(ROOT / "data" / "sepolia-seeded.json"))
     parser.add_argument("--budget", type=float, default=120.0)
     parser.add_argument("--out", default=str(ROOT / "site" / "index.html"))
     args = parser.parse_args()

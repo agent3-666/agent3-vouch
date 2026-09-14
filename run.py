@@ -49,7 +49,7 @@ def run_as_agent(args) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Check out agents before letting one spend your money.")
-    parser.add_argument("--data", default=str(ROOT / "data" / "candidates.json"), help="evidence to check against")
+    parser.add_argument("--data", default=str(ROOT / "data" / "sepolia-seeded.json"), help="evidence to check against")
     parser.add_argument("--budget", type=float, default=120.0, help="what the job is worth to you")
     parser.add_argument("--newsletter", default=str(ROOT / "data" / "newsletter.txt"), help="the job input")
     parser.add_argument("--out", default=str(ROOT / "out" / "school-events.ics"), help="where the finished work goes")

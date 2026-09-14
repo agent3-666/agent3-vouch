@@ -221,7 +221,7 @@ if (still) {{
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data", default=str(ROOT / "data" / "candidates.json"))
+    parser.add_argument("--data", default=str(ROOT / "data" / "sepolia-seeded.json"))
     parser.add_argument("--budget", type=float, default=120.0)
     args = parser.parse_args()
     demo, storyboard = build(Path(args.data), args.budget)

@@ -136,3 +136,7 @@ scripts/from_chain.py      reads it back into a snapshot
 scripts/build_site.py      renders the page from the same pipeline
 scripts/mutation_check.py  removes each rule and requires its test to fail
 ```
+
+## License
+
+MIT. See [LICENSE](LICENSE).

@@ -1,0 +1,72 @@
+{
+  "source": {
+    "job": "Turn the school newsletter into calendar entries for the family",
+    "description": "Local fixture used by the tests. Run scripts/from_chain.py to build the same shape from the public registries on Ethereum Sepolia.",
+    "seeded_by_us": true,
+    "chain": "none, this file is a fixture"
+  },
+  "agents": [
+    { "agent_id": 101, "label": "DateHound", "operator": "0xa1000000000000000000000000000000000000a1", "wallet": "0xa1000000000000000000000000000000000000a1", "quote": 40, "skill": "documents to calendar entries" },
+    { "agent_id": 102, "label": "PaperTrail", "operator": "0xb2000000000000000000000000000000000000b2", "wallet": "0xb2000000000000000000000000000000000000b2", "quote": 65, "skill": "documents to calendar entries" },
+    { "agent_id": 103, "label": "Quill", "operator": "0xc3000000000000000000000000000000000000c3", "wallet": "0xc3000000000000000000000000000000000000c3", "quote": 55, "skill": "documents to calendar entries" },
+    { "agent_id": 104, "label": "Margin", "operator": "0xd4000000000000000000000000000000000000d4", "wallet": "0xd4000000000000000000000000000000000000d4", "quote": 35, "skill": "documents to calendar entries" },
+
+    { "agent_id": 201, "label": "Circle member 1", "operator": "0xe5000000000000000000000000000000000000e5", "wallet": "0xe5000000000000000000000000000000000000e5" },
+    { "agent_id": 202, "label": "Circle member 2", "operator": "0xe6000000000000000000000000000000000000e6", "wallet": "0xe6000000000000000000000000000000000000e6" },
+    { "agent_id": 203, "label": "Circle member 3", "operator": "0xe7000000000000000000000000000000000000e7", "wallet": "0xe7000000000000000000000000000000000000e7" },
+    { "agent_id": 204, "label": "Circle member 4", "operator": "0xe8000000000000000000000000000000000000e8", "wallet": "0xe8000000000000000000000000000000000000e8" },
+    { "agent_id": 205, "label": "Circle member 5", "operator": "0xe9000000000000000000000000000000000000e9", "wallet": "0xe9000000000000000000000000000000000000e9" },
+
+    { "agent_id": 301, "label": "Stranger A", "operator": "0xf1000000000000000000000000000000000000f1", "wallet": "0xf1000000000000000000000000000000000000f1" },
+    { "agent_id": 302, "label": "Stranger B", "operator": "0xf2000000000000000000000000000000000000f2", "wallet": "0xf2000000000000000000000000000000000000f2" },
+    { "agent_id": 303, "label": "Stranger C", "operator": "0xf3000000000000000000000000000000000000f3", "wallet": "0xf3000000000000000000000000000000000000f3" },
+    { "agent_id": 304, "label": "Stranger D", "operator": "0xf4000000000000000000000000000000000000f4", "wallet": "0xf4000000000000000000000000000000000000f4" },
+    { "agent_id": 305, "label": "Big customer", "operator": "0xf5000000000000000000000000000000000000f5", "wallet": "0xf5000000000000000000000000000000000000f5" },
+    { "agent_id": 306, "label": "Small customer", "operator": "0xf6000000000000000000000000000000000000f6", "wallet": "0xf6000000000000000000000000000000000000f6" }
+  ],
+  "settlements": [
+    { "ref": "s-pt-1", "payer_agent": 301, "payee_agent": 102, "amount": 90, "token": "test-ETH", "tx": "fixture", "completed": true },
+    { "ref": "s-pt-2", "payer_agent": 302, "payee_agent": 102, "amount": 90, "token": "test-ETH", "tx": "fixture", "completed": true },
+    { "ref": "s-pt-3", "payer_agent": 303, "payee_agent": 102, "amount": 90, "token": "test-ETH", "tx": "fixture", "completed": true },
+    { "ref": "s-pt-4", "payer_agent": 304, "payee_agent": 102, "amount": 90, "token": "test-ETH", "tx": "fixture", "completed": true },
+
+    { "ref": "s-q-1", "payer_agent": 305, "payee_agent": 103, "amount": 300, "token": "test-ETH", "tx": "fixture", "completed": true },
+    { "ref": "s-q-2", "payer_agent": 306, "payee_agent": 103, "amount": 20, "token": "test-ETH", "tx": "fixture", "completed": true },
+
+    { "ref": "s-ring-1", "payer_agent": 201, "payee_agent": 101, "amount": 1, "token": "test-ETH", "tx": "fixture", "completed": true },
+    { "ref": "s-ring-2", "payer_agent": 202, "payee_agent": 101, "amount": 1, "token": "test-ETH", "tx": "fixture", "completed": true },
+    { "ref": "s-ring-3", "payer_agent": 203, "payee_agent": 101, "amount": 1, "token": "test-ETH", "tx": "fixture", "completed": true },
+    { "ref": "s-ring-4", "payer_agent": 101, "payee_agent": 201, "amount": 1, "token": "test-ETH", "tx": "fixture", "completed": true },
+    { "ref": "s-ring-5", "payer_agent": 101, "payee_agent": 202, "amount": 1, "token": "test-ETH", "tx": "fixture", "completed": true },
+    { "ref": "s-ring-6", "payer_agent": 101, "payee_agent": 203, "amount": 1, "token": "test-ETH", "tx": "fixture", "completed": true }
+  ],
+  "feedback": [
+    { "agent_id": 102, "author": "0xf1000000000000000000000000000000000000f1", "value": 100, "tag": "settled", "ref": "s-pt-1", "tx": "fixture" },
+    { "agent_id": 102, "author": "0xf2000000000000000000000000000000000000f2", "value": 100, "tag": "settled", "ref": "s-pt-2", "tx": "fixture" },
+    { "agent_id": 102, "author": "0xf3000000000000000000000000000000000000f3", "value": 100, "tag": "settled", "ref": "s-pt-3", "tx": "fixture" },
+    { "agent_id": 102, "author": "0xf4000000000000000000000000000000000000f4", "value": 100, "tag": "settled", "ref": "s-pt-4", "tx": "fixture" },
+
+    { "agent_id": 103, "author": "0xf5000000000000000000000000000000000000f5", "value": 100, "tag": "settled", "ref": "s-q-1", "tx": "fixture" },
+    { "agent_id": 103, "author": "0xf6000000000000000000000000000000000000f6", "value": 100, "tag": "settled", "ref": "s-q-2", "tx": "fixture" },
+
+    { "agent_id": 104, "author": "0xf1000000000000000000000000000000000000f1", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 104, "author": "0xf2000000000000000000000000000000000000f2", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 104, "author": "0xf3000000000000000000000000000000000000f3", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 104, "author": "0xf4000000000000000000000000000000000000f4", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 104, "author": "0xf5000000000000000000000000000000000000f5", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 104, "author": "0xf6000000000000000000000000000000000000f6", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+
+    { "agent_id": 101, "author": "0xe5000000000000000000000000000000000000e5", "value": 100, "tag": "praise", "ref": "s-ring-1", "tx": "fixture" },
+    { "agent_id": 101, "author": "0xe6000000000000000000000000000000000000e6", "value": 100, "tag": "praise", "ref": "s-ring-2", "tx": "fixture" },
+    { "agent_id": 101, "author": "0xe7000000000000000000000000000000000000e7", "value": 100, "tag": "praise", "ref": "s-ring-3", "tx": "fixture" },
+    { "agent_id": 101, "author": "0xe8000000000000000000000000000000000000e8", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 101, "author": "0xe9000000000000000000000000000000000000e9", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 101, "author": "0xe5000000000000000000000000000000000000e5", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 101, "author": "0xe6000000000000000000000000000000000000e6", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 101, "author": "0xe7000000000000000000000000000000000000e7", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 101, "author": "0xe8000000000000000000000000000000000000e8", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 101, "author": "0xe9000000000000000000000000000000000000e9", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 101, "author": "0xa1000000000000000000000000000000000000a1", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" },
+    { "agent_id": 101, "author": "0xe5000000000000000000000000000000000000e5", "value": 100, "tag": "praise", "ref": "", "tx": "fixture" }
+  ]
+}

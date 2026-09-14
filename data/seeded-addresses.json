@@ -1,0 +1,42 @@
+{
+  "chain": "ethereum-sepolia",
+  "chain_id": 11155111,
+  "job": "Turn the school newsletter into calendar entries for the family",
+  "from_block": 11704148,
+  "wallets": {
+    "datehound": "0x9aAFEC06191DFEE7C89Ec0A7daE81Fd9FaA338D5",
+    "papertrail": "0x240F8b607E690ddc15944C266e94E114F1CEA4cB",
+    "quill": "0xd46Cd48500e111bfb4706C3B192bAdF3ee926b46",
+    "margin": "0xa014d72C9A8f3882780693c723B33f9FB5393880",
+    "circle1": "0x92a6830Ca5F2307dAf595C94e506eC835A917fEC",
+    "circle2": "0x6EA8dB3bc0a1178d223D334c7f4b69d40f967141",
+    "circle3": "0xf5F51805b430ED8D67fd5DB2704bFa01E05C91E3",
+    "stranger1": "0x037996A6219191A22713F17A38E91B8653A24b78",
+    "stranger2": "0x5fc1d7E58aCf239B47e93a833D0d516FBBe014ad",
+    "stranger3": "0x6aD990b2E731D05f9db03f50D93e0579d138aec1",
+    "stranger4": "0xF2dcE12ef86D2FB5F024066FD9b2319Ae463F3F9",
+    "bigcustomer": "0x68CFa62B759ab69D7f895D2B0FCB73717e5D727D",
+    "smallcustomer": "0x06bCd1943c8019978d73a06a5558DD7d84B5EA2b"
+  },
+  "labels": {
+    "datehound": "DateHound",
+    "papertrail": "PaperTrail",
+    "quill": "Quill",
+    "margin": "Margin",
+    "circle1": "Circle 1",
+    "circle2": "Circle 2",
+    "circle3": "Circle 3",
+    "stranger1": "Stranger A",
+    "stranger2": "Stranger B",
+    "stranger3": "Stranger C",
+    "stranger4": "Stranger D",
+    "bigcustomer": "Big customer",
+    "smallcustomer": "Small customer"
+  },
+  "quotes": {
+    "datehound": 40,
+    "papertrail": 65,
+    "quill": 55,
+    "margin": 35
+  }
+}

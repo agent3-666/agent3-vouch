@@ -1,0 +1,5 @@
+# run.py needs none of these. It runs on a stock Python 3.9+ with nothing installed.
+# These are for the extras:
+strands-agents>=1.55    # vouch/tools.py, and --explain
+web3>=8.0               # scripts/seed_chain.py and scripts/from_chain.py
+pytest>=8.0             # tests

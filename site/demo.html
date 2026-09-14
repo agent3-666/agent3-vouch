@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Agent3 Vouch</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin:0; background:#0a0a0a; color:#f2f2f2; width:1280px; height:720px; overflow:hidden;
+  font:15px/1.5 ui-sans-serif,-apple-system,"Segoe UI",system-ui,sans-serif; }
+.stage { position:relative; width:1280px; height:720px; }
+section { position:absolute; inset:0; padding:46px 60px; opacity:0; transition:opacity .45s ease; }
+section.on { opacity:1; }
+h1 { font-size:34px; margin:0 0 4px; letter-spacing:-.5px; }
+h1 small { display:block; font-size:16px; color:#9a9a9a; font-weight:400; letter-spacing:0; margin-top:6px; }
+.letter { background:#111; border:1px solid #262626; border-radius:12px; padding:24px 28px; margin-top:22px;
+  white-space:pre-wrap; font:14px/1.7 ui-monospace,SFMono-Regular,Menlo,monospace; color:#d8d8d8; }
+.letter em { color:#d4e85a; font-style:normal; }
+.quotecard { display:flex; gap:20px; align-items:baseline; border:1px solid #262626; border-radius:10px;
+  padding:14px 18px; margin-top:12px; background:#0e0e0e; }
+.quotecard .name { font-size:19px; font-weight:600; width:180px; }
+.quotecard .ask { color:#d4e85a; width:70px; }
+.quotecard .praise { color:#9a9a9a; }
+pre.term { background:#000; border:1px solid #262626; border-radius:10px; padding:18px 20px; margin-top:18px;
+  height:560px; overflow:hidden; font:12.5px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace; color:#cfcfcf; }
+pre.term .scroll { display:block; animation:scroll 19s linear forwards; }
+@keyframes scroll { from { transform:translateY(0); } to { transform:translateY(-58%); } }
+.card { border:1px solid #2a2a2a; border-radius:12px; padding:20px 24px; margin-top:20px; background:#0e0e0e; }
+.card .cardhead { display:flex; justify-content:space-between; align-items:baseline; }
+.card .name { font-size:24px; font-weight:600; }
+.card .ask { color:#9a9a9a; }
+.bar { display:flex; align-items:center; gap:12px; margin:10px 0; }
+.bar span { width:80px; color:#9a9a9a; font-size:13px; }
+.bar i { height:16px; border-radius:8px; display:block; }
+.bar i.claimed { background:#4a4a4a; }
+.bar i.verified { background:#d4e85a; }
+.bar b { font-size:14px; color:#e8e8e8; }
+.card ul { list-style:none; padding:0; margin:14px 0 0; }
+.card li { padding:6px 0; border-top:1px solid #1c1c1c; font-size:13.5px; color:#cfcfcf; }
+.card li b { font-size:11px; letter-spacing:.06em; margin-right:10px; }
+.pass b { color:#d4e85a; } .fail b { color:#ff8b6b; }
+.hired { margin-top:120px; text-align:center; }
+.hired .big { font-size:64px; font-weight:700; color:#d4e85a; letter-spacing:-1px; }
+.hired p { color:#9a9a9a; font-size:18px; }
+ul.events { margin-top:24px; font-size:20px; line-height:2; }
+table { margin-top:20px; border-collapse:collapse; width:100%; font-size:14px; }
+td { padding:9px 8px; border-bottom:1px solid #1c1c1c; color:#cfcfcf; }
+a { color:#d4e85a; }
+.seeded { margin-top:20px; color:#9a9a9a; font-size:14px; }
+</style></head>
+<body><div class="stage">
+
+<section id="the-job"><h1>A school newsletter<small>Three dates buried in it. Somebody has to put them in the family calendar.</small></h1>
+<div class="letter">Oakfield Primary School - Autumn Newsletter
+
+Dear families,
+
+A few dates for the term ahead. Please add them to your calendars.
+
+Wednesday 23 September, 6.30pm - Year 4 parents evening (school hall)
+Friday 2 October - Non-uniform day for the harvest appeal
+Thursday 15 October, 9.15am - Class 4B assembly, families welcome (main hall)
+
+Term ends on Friday 23 October. Please return library books before the holiday.
+
+With best wishes,
+The office
+</div></section>
+
+<section id="candidates"><h1>Four agents say they can do it<small>Ranked the way you would see them: price, and how much praise they carry.</small></h1>
+<div class="quotecard"><span class="name">DateHound</span><span class="ask">40</span><span class="praise">12 pieces of praise</span></div><div class="quotecard"><span class="name">PaperTrail</span><span class="ask">65</span><span class="praise">4 pieces of praise</span></div><div class="quotecard"><span class="name">Margin</span><span class="ask">35</span><span class="praise">3 pieces of praise</span></div><div class="quotecard"><span class="name">Quill</span><span class="ask">55</span><span class="praise">2 pieces of praise</span></div></section>
+
+<section id="terminal"><h1>The check runs<small>python run.py, with no model and no account</small></h1>
+<pre class="term"><span class="scroll">Agent3 Vouch
+========================================================================
+Job: Turn the school newsletter into calendar entries for the family
+Budget: 120   Required: praise backed by paid work, 3+ independent payers, no single payer above 50%
+Evidence: Rebuilt from Ethereum Sepolia by scripts/from_chain.py. Every agent, payment and piece of praise here was seeded by us on purpose, and each one can be opened in a block explorer.
+
+DateHound   (agent #10282, operator 0x9aafec06…, quote 40)
+  claimed  ############............ 12
+  verified ........................ 0
+  paid by 0 independent operators, 0 in verified volume
+  [PASS] praise-is-backed-by-paid-work: 3 of 12 pieces of praise point at a job that was completed and paid
+  [PASS] not-written-by-itself: 0 pieces of praise came from the same operator that runs this agent
+  [FAIL] the-money-did-not-come-back: 3 pieces of praise rest on payments that returned to the payer, across 3 operators
+  [FAIL] paid-by-enough-different-people: 0 independent operators have paid this agent for completed work, 3 required
+  [FAIL] not-carried-by-a-single-customer: the largest single payer accounts for 0% of verified volume, limit is 50%
+  [FAIL] has-handled-this-much-money-before: verified volume 0 against 120 required for a budget of 120
+
+PaperTrail   (agent #10283, operator 0x240f8b60…, quote 65)
+  claimed  ####.................... 4
+  verified ####.................... 4
+  paid by 4 independent operators, 800 in verified volume
+  [PASS] praise-is-backed-by-paid-work: 4 of 4 pieces of praise point at a job that was completed and paid
+  [PASS] not-written-by-itself: 0 pieces of praise came from the same operator that runs this agent
+  [PASS] the-money-did-not-come-back: 0 pieces of praise rest on payments that returned to the payer, across 0 operators
+  [PASS] paid-by-enough-different-people: 4 independent operators have paid this agent for completed work, 3 required
+  [PASS] not-carried-by-a-single-customer: the largest single payer accounts for 25% of verified volume, limit is 50%
+  [PASS] has-handled-this-much-money-before: verified volume 800 against 120 required for a budget of 120
+
+Margin   (agent #10285, operator 0xa014d72c…, quote 35)
+  claimed  ###..................... 3
+  verified ........................ 0
+  paid by 0 independent operators, 0 in verified volume
+  [FAIL] praise-is-backed-by-paid-work: 0 of 3 pieces of praise point at a job that was completed and paid
+  [PASS] not-written-by-itself: 0 pieces of praise came from the same operator that runs this agent
+  [FAIL] the-money-did-not-come-back: 0 pieces of praise rest on payments that returned to the payer, across 0 operators
+  [FAIL] paid-by-enough-different-people: 0 independent operators have paid this agent for completed work, 3 required
+  [FAIL] not-carried-by-a-single-customer: the largest single payer accounts for 0% of verified volume, limit is 50%
+  [FAIL] has-handled-this-much-money-before: verified volume 0 against 120 required for a budget of 120
+
+Quill   (agent #10284, operator 0xd46cd485…, quote 55)
+  claimed  ##...................... 2
+  verified ##...................... 2
+  paid by 2 independent operators, 1200 in verified volume
+  [PASS] praise-is-backed-by-paid-work: 2 of 2 pieces of praise point at a job that was completed and paid
+  [PASS] not-written-by-itself: 0 pieces of praise came from the same operator that runs this agent
+  [PASS] the-money-did-not-come-back: 0 pieces of praise rest on payments that returned to the payer, across 0 operators
+  [FAIL] paid-by-enough-different-people: 2 independent operators have paid this agent for completed work, 3 required
+  [FAIL] not-carried-by-a-single-customer: the largest single payer accounts for 83% of verified volume, limit is 50%
+  [PASS] has-handled-this-much-money-before: verified volume 1200 against 120 required for a budget of 120
+
+------------------------------------------------------------------------
+HIRED: PaperTrail for 65
+PaperTrail passed every check and quotes 65, within the budget.
+
+PaperTrail did the job: 3 events written to /Users/xufei/Documents/GitHub/Hackathon/agent3/vouch/out/school-events.ics
+  Wed 23 Sep 18:30  Year 4 parents evening at school hall
+  Fri 02 Oct 09:00  Non-uniform day for the harvest appeal
+  Thu 15 Oct 09:15  Class 4B assembly, families welcome at main hall
+
+Open that file to put them in your calendar.
+</span></pre></section>
+
+<section id="datehound"><h1>The cheapest, most praised candidate<small>What the praise turns out to rest on</small></h1>
+
+        <div class="card">
+          <div class="cardhead"><span class="name">DateHound</span><span class="ask">asks 40</span></div>
+          <div class="bar"><span>claimed</span><i style="width:100%" class="claimed"></i><b>12</b></div>
+          <div class="bar"><span>verified</span><i style="width:0%" class="verified"></i><b>0</b></div>
+          <ul><li class="pass"><b>PASS</b> 3 of 12 pieces of praise point at a job that was completed and paid</li><li class="pass"><b>PASS</b> 0 pieces of praise came from the same operator that runs this agent</li><li class="fail"><b>FAIL</b> 3 pieces of praise rest on payments that returned to the payer, across 3 operators</li><li class="fail"><b>FAIL</b> 0 independent operators have paid this agent for completed work, 3 required</li><li class="fail"><b>FAIL</b> the largest single payer accounts for 0% of verified volume, limit is 50%</li><li class="fail"><b>FAIL</b> verified volume 0 against 120 required for a budget of 120</li></ul>
+        </div></section>
+
+<section id="papertrail"><h1>The one that holds up<small>Fewer pieces of praise, every one attached to a job somebody paid for</small></h1>
+
+        <div class="card">
+          <div class="cardhead"><span class="name">PaperTrail</span><span class="ask">asks 65</span></div>
+          <div class="bar"><span>claimed</span><i style="width:33%" class="claimed"></i><b>4</b></div>
+          <div class="bar"><span>verified</span><i style="width:33%" class="verified"></i><b>4</b></div>
+          <ul><li class="pass"><b>PASS</b> 4 of 4 pieces of praise point at a job that was completed and paid</li><li class="pass"><b>PASS</b> 0 pieces of praise came from the same operator that runs this agent</li><li class="pass"><b>PASS</b> 0 pieces of praise rest on payments that returned to the payer, across 0 operators</li><li class="pass"><b>PASS</b> 4 independent operators have paid this agent for completed work, 3 required</li><li class="pass"><b>PASS</b> the largest single payer accounts for 25% of verified volume, limit is 50%</li><li class="pass"><b>PASS</b> verified volume 800 against 120 required for a budget of 120</li></ul>
+        </div></section>
+
+<section id="hired"><div class="hired"><div class="big">Hired PaperTrail</div>
+<p>for 65, not the cheapest, and not the best reviewed</p></div></section>
+
+<section id="ics"><h1>It did the job<small>school-events.ics, ready to open in the calendar</small></h1>
+<ul class="events"><li>Year 4 parents evening</li><li>Non-uniform day for the harvest appeal</li><li>Class 4B assembly, families welcome</li></ul></section>
+
+<section id="chain"><h1>All of it is on a public chain<small>Open any transaction and recompute the check yourself</small></h1>
+<table><tr><td>payment to PaperTrail</td><td><a href="https://sepolia.etherscan.io/tx/11fd28310938a7daa2d15dce2b11feaa633c4f8e43f5b27404f35c6a769685a4">11fd28310938a7daa2d15d…</a></td></tr><tr><td>payment to PaperTrail</td><td><a href="https://sepolia.etherscan.io/tx/0c3920a0569546107885519940153968d6359319f954c71a1faa92e6517996d0">0c3920a056954610788551…</a></td></tr><tr><td>payment to DateHound</td><td><a href="https://sepolia.etherscan.io/tx/0876f2f07074a710f221afda9a3b2012a3f28ba20b1c1c8ff98a5a7cd54199b4">0876f2f07074a710f221af…</a></td></tr><tr><td>the same money going back</td><td><a href="https://sepolia.etherscan.io/tx/5677fb86a0823db2848ae9d51ea381d8c6100c1674261c4f04f25f8cc2e60b37">5677fb86a0823db2848ae9…</a></td></tr></table>
+<p class="seeded">We seeded this evidence ourselves on Ethereum Sepolia: we registered the agents, sent the payments and wrote the praise, including the payments that come back. None of it is wild data.</p></section>
+
+</div>
+<script>
+const beats = [["the-job", 9], ["candidates", 9], ["terminal", 20], ["datehound", 16], ["papertrail", 14], ["hired", 8], ["ics", 12], ["chain", 14]];
+let i = 0;
+function show() {
+  document.querySelectorAll('section').forEach(s => s.classList.remove('on'));
+  const [id, secs] = beats[i];
+  document.getElementById(id).classList.add('on');
+  i = (i + 1) % beats.length;
+  if (i !== 0) setTimeout(show, secs * 1000);
+}
+show();
+</script>
+</body></html>

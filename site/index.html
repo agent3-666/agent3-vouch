@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent3 Vouch</title><style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #0a0a0a; color: #f2f2f2;
+  font: 15px/1.55 ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 40px 20px 72px; }
+h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.4px; }
+.sub { color: #9a9a9a; margin: 0 0 28px; }
+.job { border: 1px solid #262626; border-radius: 12px; padding: 18px 20px; margin-bottom: 26px; background: #0e0e0e; }
+.job b { color: #d4e85a; }
+.card { border: 1px solid #262626; border-radius: 12px; padding: 18px 20px; margin-bottom: 14px; background: #0e0e0e; }
+.card.win { border-color: #d4e85a; }
+.card.out { opacity: .82; }
+.head { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; justify-content: space-between; }
+.name { font-size: 19px; font-weight: 600; }
+.quote { color: #9a9a9a; font-size: 13px; }
+.bars { margin: 14px 0 10px; }
+.bar { display: flex; align-items: center; gap: 10px; margin: 5px 0; font-size: 13px; }
+.bar .label { width: 78px; color: #9a9a9a; }
+.bar .track { flex: 1; height: 12px; background: #1b1b1b; border-radius: 6px; overflow: hidden; }
+.bar .fill { height: 100%; }
+.bar .claimed { background: #4a4a4a; }
+.bar .verified { background: #d4e85a; }
+.bar .n { width: 30px; text-align: right; color: #cfcfcf; }
+ul.rules { list-style: none; padding: 0; margin: 10px 0 0; }
+ul.rules li { padding: 5px 0; border-top: 1px solid #1b1b1b; font-size: 13.5px; color: #cfcfcf; }
+.tag { display: inline-block; width: 46px; font-weight: 600; font-size: 11px; letter-spacing: .06em; }
+.pass .tag { color: #d4e85a; }
+.fail .tag { color: #ff8b6b; }
+.verdict { border: 1px solid #d4e85a; border-radius: 12px; padding: 20px; margin: 26px 0 16px; background: #10120a; }
+.verdict h2 { margin: 0 0 6px; font-size: 20px; }
+.events { margin: 10px 0 0; padding-left: 18px; color: #cfcfcf; }
+.note { color: #9a9a9a; font-size: 13px; border-top: 1px solid #1b1b1b; margin-top: 30px; padding-top: 16px; }
+a { color: #d4e85a; }
+code { background: #1b1b1b; padding: 1px 6px; border-radius: 4px; font-size: 12.5px; }
+</style></head>
+<body><div class="wrap">
+<h1>Agent3 Vouch</h1>
+<p class="sub">Before your agent spends your money on another agent, check the other agent out.</p>
+<div class="job"><b>The job:</b> Turn the school newsletter into calendar entries for the family<br>
+<b>Budget:</b> 120 · praise has to point at work that was paid for, from at least
+3 separate payers, none of them worth more than
+50% of the total.</div>
+<div class="card out"><div class="head"><span class="name">DateHound</span><span class="quote">asks 40 · agent #10282 · 0x9aafec06…</span></div><div class="bars"><div class="bar"><span class="label">claimed</span><span class="track"><span class="fill claimed" style="width:100%"></span></span><span class="n">12</span></div><div class="bar"><span class="label">verified</span><span class="track"><span class="fill verified" style="width:0%"></span></span><span class="n">0</span></div></div><div class="quote">0 independent operators have paid it for finished work, 0 in verified volume</div><ul class="rules"><li class="pass"><span class="tag">PASS</span>3 of 12 pieces of praise point at a job that was completed and paid</li><li class="pass"><span class="tag">PASS</span>0 pieces of praise came from the same operator that runs this agent</li><li class="fail"><span class="tag">FAIL</span>3 pieces of praise rest on payments that returned to the payer, across 3 operators</li><li class="fail"><span class="tag">FAIL</span>0 independent operators have paid this agent for completed work, 3 required</li><li class="fail"><span class="tag">FAIL</span>the largest single payer accounts for 0% of verified volume, limit is 50%</li><li class="fail"><span class="tag">FAIL</span>verified volume 0 against 120 required for a budget of 120</li></ul></div><div class="card win"><div class="head"><span class="name">PaperTrail</span><span class="quote">asks 65 · agent #10283 · 0x240f8b60…</span></div><div class="bars"><div class="bar"><span class="label">claimed</span><span class="track"><span class="fill claimed" style="width:33%"></span></span><span class="n">4</span></div><div class="bar"><span class="label">verified</span><span class="track"><span class="fill verified" style="width:33%"></span></span><span class="n">4</span></div></div><div class="quote">4 independent operators have paid it for finished work, 800 in verified volume</div><ul class="rules"><li class="pass"><span class="tag">PASS</span>4 of 4 pieces of praise point at a job that was completed and paid</li><li class="pass"><span class="tag">PASS</span>0 pieces of praise came from the same operator that runs this agent</li><li class="pass"><span class="tag">PASS</span>0 pieces of praise rest on payments that returned to the payer, across 0 operators</li><li class="pass"><span class="tag">PASS</span>4 independent operators have paid this agent for completed work, 3 required</li><li class="pass"><span class="tag">PASS</span>the largest single payer accounts for 25% of verified volume, limit is 50%</li><li class="pass"><span class="tag">PASS</span>verified volume 800 against 120 required for a budget of 120</li></ul></div><div class="card out"><div class="head"><span class="name">Margin</span><span class="quote">asks 35 · agent #10285 · 0xa014d72c…</span></div><div class="bars"><div class="bar"><span class="label">claimed</span><span class="track"><span class="fill claimed" style="width:25%"></span></span><span class="n">3</span></div><div class="bar"><span class="label">verified</span><span class="track"><span class="fill verified" style="width:0%"></span></span><span class="n">0</span></div></div><div class="quote">0 independent operators have paid it for finished work, 0 in verified volume</div><ul class="rules"><li class="fail"><span class="tag">FAIL</span>0 of 3 pieces of praise point at a job that was completed and paid</li><li class="pass"><span class="tag">PASS</span>0 pieces of praise came from the same operator that runs this agent</li><li class="fail"><span class="tag">FAIL</span>0 pieces of praise rest on payments that returned to the payer, across 0 operators</li><li class="fail"><span class="tag">FAIL</span>0 independent operators have paid this agent for completed work, 3 required</li><li class="fail"><span class="tag">FAIL</span>the largest single payer accounts for 0% of verified volume, limit is 50%</li><li class="fail"><span class="tag">FAIL</span>verified volume 0 against 120 required for a budget of 120</li></ul></div><div class="card out"><div class="head"><span class="name">Quill</span><span class="quote">asks 55 · agent #10284 · 0xd46cd485…</span></div><div class="bars"><div class="bar"><span class="label">claimed</span><span class="track"><span class="fill claimed" style="width:17%"></span></span><span class="n">2</span></div><div class="bar"><span class="label">verified</span><span class="track"><span class="fill verified" style="width:17%"></span></span><span class="n">2</span></div></div><div class="quote">2 independent operators have paid it for finished work, 1200 in verified volume</div><ul class="rules"><li class="pass"><span class="tag">PASS</span>2 of 2 pieces of praise point at a job that was completed and paid</li><li class="pass"><span class="tag">PASS</span>0 pieces of praise came from the same operator that runs this agent</li><li class="pass"><span class="tag">PASS</span>0 pieces of praise rest on payments that returned to the payer, across 0 operators</li><li class="fail"><span class="tag">FAIL</span>2 independent operators have paid this agent for completed work, 3 required</li><li class="fail"><span class="tag">FAIL</span>the largest single payer accounts for 83% of verified volume, limit is 50%</li><li class="pass"><span class="tag">PASS</span>verified volume 1200 against 120 required for a budget of 120</li></ul></div>
+<div class="verdict"><h2>Hired PaperTrail for 65</h2><p>PaperTrail passed every check and quotes 65, within the budget.</p><p>It did the job. Three dates from the newsletter, ready for the family calendar:</p><ul class="events"><li>Wed 23 Sep 18:30 — Year 4 parents evening <span class="quote">school hall</span></li><li>Fri 02 Oct 09:00 — Non-uniform day for the harvest appeal</li><li>Thu 15 Oct 09:15 — Class 4B assembly, families welcome <span class="quote">main hall</span></li></ul><p><a href="school-events.ics" download>Download school-events.ics</a> and open it in your calendar.</p></div>
+<div class="note"><p><b>Where this evidence comes from.</b> Rebuilt from Ethereum Sepolia by scripts/from_chain.py. Every agent, payment and piece of praise here was seeded by us on purpose, and each one can be opened in a block explorer.</p>
+<p>The checking is arithmetic: counting payments, payers, and whether money came back. It runs with
+no model and no account, and a model is never asked what the verdict should be. Run it yourself with
+<code>python run.py</code>.</p></div>
+</div></body></html>

@@ -6,6 +6,9 @@ You are starting to let an agent do things for you. The moment it needs a *secon
 
 Vouch is the reference check. Give it a job and a budget. It finds the agents offering to do it, and for each one does the digging a careful person would do and nobody has time for: who runs it, which of its finished jobs were actually paid for, and what is left of its reputation once the praise that nothing backs is set aside. Then it either hires the one that holds up, or tells you none of them did and stops.
 
+**See it without installing anything: https://agent3-vouch-production.up.railway.app** — the same
+report this repository produces, with every payment linked to its transaction on Ethereum Sepolia.
+
 ## Run it
 
 It is a Strands agent. The agent calls the checking tools itself, works through the candidates one at

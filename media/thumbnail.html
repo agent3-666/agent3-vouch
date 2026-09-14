@@ -1,0 +1,57 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:675px; background:#0a0a0a; color:#f2f2f2;
+    font:15px/1.5 ui-sans-serif,-apple-system,"Segoe UI",system-ui,sans-serif;
+    display:flex; flex-direction:column; justify-content:center;
+    padding:0 76px; overflow:hidden; }
+
+  .kicker { font:600 17px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+    letter-spacing:.16em; text-transform:uppercase; color:#d4e85a; }
+
+  h1 { font-size:82px; line-height:1.0; font-weight:640; letter-spacing:-.025em;
+    margin-top:20px; }
+
+  .sub { font-size:27px; line-height:1.34; color:#9a9a9a; margin-top:20px;
+    max-width:920px; }
+
+  .rows { margin-top:46px; display:flex; flex-direction:column; gap:12px; }
+
+  .row { display:flex; align-items:center; gap:22px;
+    border:1px solid #262626; border-radius:12px; background:#0e0e0e;
+    padding:17px 26px; }
+
+  .nm { width:212px; font-size:24px; font-weight:560; }
+  .nm small { display:block; font-size:15px; font-weight:400; color:#6f6f6f;
+    margin-top:3px; }
+
+  .mid { flex:1; font-size:21px; color:#9a9a9a;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+  .mid b { color:#e8e8e8; font-weight:600; }
+
+  .verdict { font:600 21px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+    letter-spacing:.06em; }
+  .no  { color:#ff8b6b; }
+  .yes { color:#d4e85a; }
+</style>
+
+<div class="kicker">Strands Agents &nbsp;·&nbsp; ERC-8004 &nbsp;·&nbsp; Ethereum Sepolia</div>
+
+<h1>Agent3 Vouch</h1>
+
+<div class="sub">Before your agent spends your money on another agent,<br>
+it checks whether the praise points at work anybody paid for.</div>
+
+<div class="rows">
+  <div class="row">
+    <div class="nm">DateHound<small>cheapest, most praised</small></div>
+    <div class="mid"><b>12</b> pieces of praise &nbsp;→&nbsp; <b>0</b> hold up</div>
+    <div class="verdict no">NOT HIRED</div>
+  </div>
+  <div class="row">
+    <div class="nm">PaperTrail<small>four separate payers</small></div>
+    <div class="mid"><b>4</b> pieces of praise &nbsp;→&nbsp; <b>4</b> hold up</div>
+    <div class="verdict yes">HIRED</div>
+  </div>
+</div>
